@@ -1,0 +1,22 @@
+/**
+ * spring-demo
+ * com.demo.cache.config
+ * package-info.java
+ * 
+ * 2015年6月7日-下午6:50:52
+ * 2015 Administrator
+ * 
+ */
+/**
+ * 
+ * 缓存的配置
+ * 
+ * 
+ * 池超凡
+ * 
+ * 2015年6月7日 下午6:50:52
+ * 
+ * @version 1.0.0
+ * 
+ */
+package com.demo.cache.config;

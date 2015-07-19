@@ -57,7 +57,8 @@ public class RedisCacheConfig  {
         om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);  
         jackson2JsonRedisSerializer.setObjectMapper(om);  
         template.setValueSerializer(jackson2JsonRedisSerializer);  
-        template.afterPropertiesSet();  
+      //template.expire(key, timeout, unit)
+        template.afterPropertiesSet(); 
         return template;  
     }
 
