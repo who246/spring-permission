@@ -1,7 +1,10 @@
 package com.demo.application.config;
 
+import java.util.List;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -25,12 +28,16 @@ public class Config {
      @Bean(name = "webMvcConfigurerAdapter")
      public WebMvcConfigurerAdapter getWebMvcConfigurerAdapter(){
          WebMvcConfigurerAdapter w = new WebMvcConfigurerAdapter() {
+             public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+                 
+             }
              public void addInterceptors(InterceptorRegistry registry){  
                  
                  registry.addInterceptor(new CommonInterceptor()).addPathPatterns("/**");
-                 
+                
              } 
         };
         return w;
      }
+     
 }

@@ -21,9 +21,9 @@ public class NoticeService extends BaseService<Notice, Long> {
    @Override
    @CacheEvict(value = Constants.DM_CacheKey, key = "'#root.targetClass+#root.methodName+getWelcomeNotice'",beforeInvocation=true)
  //  @CacheEvict(value = Constants.DM_CacheKey, key = "keyGenerator",beforeInvocation=true)
-public void update(Notice o) {
+  public void update(Notice o) {
     super.update(o);
-}
+   }
     
     
 }
