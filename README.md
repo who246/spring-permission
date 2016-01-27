@@ -1,2 +1,2 @@
-# spring-demo
-shiro + spring-Permission 实现的权限系统
+# spring-permission
+shiro + spring-boot 实现的权限系统
